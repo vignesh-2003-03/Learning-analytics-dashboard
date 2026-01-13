@@ -9,8 +9,7 @@ export const COLORS = {
   purple: "#A78BFA",
   gray: "#9CA3AF",
 };
-
-// MOCK DATA 2024
+// data2024
 export const mockData2024 = {
   "summary": {
     "totalLearners": 22500,
@@ -236,7 +235,7 @@ export const mockData2024 = {
   }
 };
 
-// MOCK DATA 2025
+// data2025
 export const mockData2025 = {
   ...mockData2024,
   "summary": {

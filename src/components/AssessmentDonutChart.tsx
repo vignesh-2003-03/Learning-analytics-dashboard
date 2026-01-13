@@ -10,7 +10,7 @@ const AssessmentDonutChart = ({
   return (
     <div className={`${cardBg} p-6 rounded-lg border ${borderColor}`}>
       <h3 className="text-lg font-semibold mb-4">
-        Average assessment score
+        Average assessment score 
       </h3>
 
       <ResponsiveContainer width="100%" height={300}>
@@ -28,7 +28,7 @@ const AssessmentDonutChart = ({
               <Cell key={index} fill={entry.color} />
             ))}
 
-            {/* CENTER LABEL (IMPORTANT) */}
+            {/* CENTER LABEL*/}
             <Label
               value="All Districts"
               position="center"

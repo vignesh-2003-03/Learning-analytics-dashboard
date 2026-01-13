@@ -1,56 +1,178 @@
-# Learning Analytics Dashboard
+##Learning Analytics Dashboard
 
-## Author
-**Vigneshwaran**
+Author: Vigneshwaran
 
----
+##Project Overview
+===================
 
-## Project Overview
+The Learning Analytics Dashboard is a responsive web application built using React + TypeScript.
+It provides interactive visualizations to analyze learner performance, course progress, assessment completion, grade distribution, and district-wise rankings.
 
-The Learning Analytics Dashboard is a responsive web application built using **React + TypeScript**.  
-It visualizes learner performance, course progress, assessment completion, grades, and district-wise rankings using interactive charts and tables.
+##Key Highlights
+================
 
-The dashboard supports:
-- Year-based data switching (2024 / 2025)
-- Light & Dark theme toggle
-- Clean, professional UI matching the provided design mockups
+--Year-based data switching (2024 / 2025)
 
----
+--Light and Dark theme toggle
 
-## Tech Stack
+--Interactive charts and KPI cards
 
-- **React 18**
-- **TypeScript**
-- **Vite**
-- **Recharts** (for charts & graphs)
-- **CSS Variables** (for theming)
-- **JSON** (mock data source)
+--Clean, responsive, and professional UI
 
----
+##Tech Stack
+============
 
-##  Project Structure
+React 18
 
-project/
+TypeScript
 
+Vite
+
+Recharts (Charts & Graphs)
+
+CSS Variables (Theming)
+
+JSON (Mock Data Source)
+
+
+##Project Structure
+===================
+Learning-analytics-dashboard/
 │
 ├── src/
-│ ├── components/
-│ │ |── TopBar.tsx
-│ │ |── ThemeToggle.tsx
-│ │ |── KPICard.tsx
-│ │ |── CourseProgressChart.tsx
-│ │ |── AssessmentChart.tsx
-│ │ |── GradeBreakdownChart.tsx
-│ │ |── DistrictRankingTable.tsx
-│ │ └──data.tsx
-│ 
-│── App.tsx
-│── main.tsx
-│── index.css
+│   ├── components/
+│   │   ├── AssessmentChart.tsx
+│   │   ├── CourseProgressChart.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── DashboardHeader.tsx
+│   │   ├── data.ts
+│   │   ├── DistrictRankCard.tsx
+│   │   ├── DistrictRanking.tsx
+│   │   ├── GradeBreakdownChart.tsx
+│   │   ├── KpiCard.tsx
+│   │   ├── KpiCards.tsx
+│   │   ├── PassPercentageChart.tsx
+│   │   └── TopControls.tsx
+│
+├── App.tsx
+├── main.tsx
+├── index.css
 │
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
 
+##Build and Verification Instructions
+=====================================
 
+This section describes how to install, build, run, and verify the application.
+
+##Prerequisites
+===============
+
+Ensure the following tools are installed:
+
+Node.js (version 18 or higher recommended)
+
+npm (included with Node.js)
+
+A modern web browser (Chrome, Edge, or Firefox)
+
+##Verify the installation:
+=======================
+
+node -v
+npm -v
+
+## Installation Steps
+=====================
+
+Clone the repository:
+
+git clone <your-github-repository-url>
+
+
+Navigate to the project directory:
+
+cd learning-analytics-dashboard
+
+
+#Install dependencies:
+=====================
+
+npm install
+
+##Running the Application (Development Mode)
+=========================
+
+Start the development server:
+
+npm run dev
+
+
+Application runs at: http://localhost:5173/
+
+Hot reload is enabled for development.
+
+Building the Application (Production)
+=====================================
+
+Generate an optimized production build:
+
+npm run build
+
+
+Production-ready files are created in the dist/ directory.
+
+##Previewing the Production Build
+=================================
+
+Preview the production build locally:
+
+npm run preview
+
+
+This step ensures the application works correctly after the build process.
+
+##Verification Checklist:
+
+Verify the following after running the application:
+
+Application loads without errors
+
+Year toggle switches data between 2024 and 2025
+
+Light and Dark theme toggle works correctly
+
+KPI cards display accurate values
+
+Charts render correctly
+
+District ranking table displays proper data
+
+Layout is responsive across different screen sizes
+
+##Troubleshooting:
+==================
+
+If dependency issues occur, reinstall dependencies:
+
+rm -rf node_modules
+npm install
+
+🚀 Deployment
+
+The application can be deployed using:
+
+Vercel
+
+Netlify
+
+GitHub Pages
+
+Use the contents of the dist/ folder for deployment.
+
+##License
+
+This project is developed for learning and demonstration purposes.
