@@ -37,6 +37,7 @@ JSON (Mock Data Source)
 
 ##Project Structure
 ===================
+
 Learning-analytics-dashboard/
 │
 ├── src/
@@ -54,10 +55,15 @@ Learning-analytics-dashboard/
 │   │   ├── PassPercentageChart.tsx
 │   │   └── TopControls.tsx
 │
+├──screenshots/
+├── dashboard-light.png
+├── dashboard-dark.png
+├── district-ranking-light.png
+├── district-ranking-dark.png
+|
 ├── App.tsx
 ├── main.tsx
 ├── index.css
-│
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
