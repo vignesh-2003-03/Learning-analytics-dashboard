@@ -1,73 +1,185 @@
-# React + TypeScript + Vite
+##Learning Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Author: Vigneshwaran
 
-Currently, two official plugins are available:
+##Project Overview
+===================
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Learning Analytics Dashboard is a responsive web application built using React + TypeScript.
+It provides interactive visualizations to analyze learner performance, course progress, assessment completion, grade distribution, and district-wise rankings.
 
-## React Compiler
+##Key Highlights
+================
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+--Year-based data switching (2024 / 2025)
 
-## Expanding the ESLint configuration
+--Light and Dark theme toggle
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+--Interactive charts and KPI cards
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+--Clean, responsive, and professional UI
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+##Tech Stack
+============
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+React 18
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+TypeScript
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Vite
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Recharts (Charts & Graphs)
+
+CSS Variables (Theming)
+
+JSON (Mock Data Source)
+
+
+##Project Structure
+===================
+
+Learning-analytics-dashboard/
+│
+├── src/
+│   ├── components/
+│   │   ├── AssessmentChart.tsx
+│   │   ├── CourseProgressChart.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── DashboardHeader.tsx
+│   │   ├── data.ts
+│   │   ├── DistrictRankCard.tsx
+│   │   ├── DistrictRanking.tsx
+│   │   ├── GradeBreakdownChart.tsx
+│   │   ├── KpiCard.tsx
+│   │   ├── KpiCards.tsx
+│   │   ├── PassPercentageChart.tsx
+│   │   └── TopControls.tsx
+│
+├──screenshots/
+├── dashboard-light.png
+├── dashboard-dark.png
+├── district-ranking-light.png
+├── district-ranking-dark.png
+|
+├── App.tsx
+├── main.tsx
+├── index.css
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+
+##Build and Verification Instructions
+=====================================
+
+This section describes how to install, build, run, and verify the application.
+
+##Prerequisites
+===============
+
+Ensure the following tools are installed:
+
+Node.js (version 18 or higher recommended)
+
+npm (included with Node.js)
+
+A modern web browser (Chrome, Edge, or Firefox)
+
+##Verify the installation:
+=======================
+
+node -v
+npm -v
+
+## Installation Steps
+=====================
+
+Clone the repository:
+
+git clone <your-github-repository-url>
+
+
+Navigate to the project directory:
+
+cd learning-analytics-dashboard
+
+
+#Install dependencies:
+=====================
+
+npm install
+
+##Running the Application (Development Mode)
+=========================
+
+Start the development server:
+
+npm run dev
+
+
+Application runs at: http://localhost:5173/
+
+Hot reload is enabled for development.
+
+Building the Application (Production)
+=====================================
+
+Generate an optimized production build:
+
+npm run build
+
+
+Production-ready files are created in the dist/ directory.
+
+##Previewing the Production Build
+=================================
+
+Preview the production build locally:
+
+npm run preview
+
+
+This step ensures the application works correctly after the build process.
+
+##Verification Checklist:
+
+Verify the following after running the application:
+
+Application loads without errors
+
+Year toggle switches data between 2024 and 2025
+
+Light and Dark theme toggle works correctly
+
+KPI cards display accurate values
+
+Charts render correctly
+
+District ranking table displays proper data
+
+Layout is responsive across different screen sizes
+
+##Troubleshooting:
+==================
+
+If dependency issues occur, reinstall dependencies:
+
+rm -rf node_modules
+npm install
+
+##Deployment:
+=============
+
+The application can be deployed using:
+
+Vercel
+
+Netlify
+
+GitHub Pages
+
+Use the contents of the dist/ folder for deployment.
+
+##License
+
+This project is developed for learning and demonstration purposes.
