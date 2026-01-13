@@ -54,6 +54,7 @@ Learning-analytics-dashboard/
 │   │   ├── KpiCards.tsx
 │   │   ├── PassPercentageChart.tsx
 │   │   └── TopControls.tsx
+
 │
 ├──screenshots/
 ├── dashboard-light.png
@@ -61,6 +62,7 @@ Learning-analytics-dashboard/
 ├── district-ranking-light.png
 ├── district-ranking-dark.png
 |
+
 ├── App.tsx
 ├── main.tsx
 ├── index.css
