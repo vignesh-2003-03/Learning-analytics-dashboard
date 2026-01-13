@@ -62,5 +62,4 @@ const CourseProgressChart = ({
     </div>
   );
 };
-
 export default CourseProgressChart;

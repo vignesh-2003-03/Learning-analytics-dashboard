@@ -1,5 +1,5 @@
 const KpiCard = ({ title, value, icon }) => (
-  <div className="bg-gray-800 p-4 rounded-lg">
+  <div className="bg-green-400 p-4 rounded-lg">
     <div className="flex items-center gap-2 mb-2">
       {icon}
       <span className="text-sm">{title}</span>

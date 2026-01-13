@@ -28,7 +28,7 @@ const AssessmentDonutChart = ({
               <Cell key={index} fill={entry.color} />
             ))}
 
-            {/* ✅ CENTER LABEL (IMPORTANT) */}
+            {/* CENTER LABEL (IMPORTANT) */}
             <Label
               value="All Districts"
               position="center"
@@ -40,7 +40,7 @@ const AssessmentDonutChart = ({
             />
           </Pie>
 
-          {/* ✅ TOOLTIP */}
+          {/* TOOLTIP */}
           <Tooltip
             contentStyle={{
               backgroundColor: isDark ? "#1F2937" : "#FFFFFF",
@@ -51,7 +51,7 @@ const AssessmentDonutChart = ({
         </PieChart>
       </ResponsiveContainer>
 
-      {/* ✅ TEXT BELOW CHART */}
+      {/* TEXT BELOW CHART */}
       <div className="flex justify-around mt-4">
         <div className="text-center">
           <div className="text-sm text-gray-400">
