@@ -11,13 +11,13 @@ It provides interactive visualizations to analyze learner performance, course pr
 ##Key Highlights
 ================
 
---Year-based data switching (2024 / 2025)
+- Year-based data switching (2024 / 2025)
 
---Light and Dark theme toggle
+- Light and Dark theme toggle
 
---Interactive charts and KPI cards
+- Interactive charts and KPI cards
 
---Clean, responsive, and professional UI
+- Clean, responsive, and professional UI
 
 ##Tech Stack
 ============
@@ -38,38 +38,36 @@ JSON (Mock Data Source)
 ##Project Structure
 ===================
 
-Learning-analytics-dashboard/
-│
-├── src/
-│   ├── components/
-│   │   ├── AssessmentChart.tsx
-│   │   ├── CourseProgressChart.tsx
-│   │   ├── Dashboard.tsx
-│   │   ├── DashboardHeader.tsx
-│   │   ├── data.ts
-│   │   ├── DistrictRankCard.tsx
-│   │   ├── DistrictRanking.tsx
-│   │   ├── GradeBreakdownChart.tsx
-│   │   ├── KpiCard.tsx
-│   │   ├── KpiCards.tsx
-│   │   ├── PassPercentageChart.tsx
-│   │   └── TopControls.tsx
+- Learning-analytics-dashboard/
+      - src/ 
+    - components
+        - AssessmentChart.tsx
+        - CourseProgressChart.tsx
+        - Dashboard.tsx
+        - DashboardHeader.tsx
+        - data.ts
+        - DistrictRankCard.tsx
+        - DistrictRanking.tsx
+        - GradeBreakdownChart.tsx
+        - KpiCard.tsx
+        - KpiCards.tsx
+        - PassPercentageChart.tsx
+        - TopControls.tsx
 
-│
-├──screenshots/
-├── dashboard-light.png
-├── dashboard-dark.png
-├── district-ranking-light.png
-├── district-ranking-dark.png
-|
+  - screenshots/
+    - dashboard-light.png
+    - dashboard-dark.png
+    - district-ranking-light.png
+    -  district-ranking-dark.png
 
-├── App.tsx
-├── main.tsx
-├── index.css
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
+
+  - App.tsx
+  - main.tsx
+  - index.css
+  - package.json
+  - tsconfig.json
+  - vite.config.ts
+  - README.md
 
 ##Build and Verification Instructions
 =====================================
