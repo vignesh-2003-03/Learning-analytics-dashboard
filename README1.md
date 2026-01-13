@@ -161,7 +161,8 @@ If dependency issues occur, reinstall dependencies:
 rm -rf node_modules
 npm install
 
-🚀 Deployment
+##Deployment:
+=============
 
 The application can be deployed using:
 
